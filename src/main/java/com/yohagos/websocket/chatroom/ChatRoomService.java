@@ -28,7 +28,7 @@ public class ChatRoomService {
                 });
     }
 
-    private String createChatId(
+    public String createChatId(
             String senderId,
             String recipientId
     ) {
