@@ -18,7 +18,7 @@ public class UserController {
 
 
     @MessageMapping("/user.addUser")
-    @SendTo("/user/topic")
+    @SendTo("/user/public")
     public User add(
             @Payload User user
     ) {
@@ -27,7 +27,7 @@ public class UserController {
     }
 
     @MessageMapping("/user.disconnectUser")
-    @SendTo("/user/topic")
+    @SendTo("/user/public")
     public User disconnect(
             @Payload User user
     ) {
